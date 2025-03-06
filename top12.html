@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>S39 [OCFA] Standings & Playoff Picture</title>
+  <style>
+    /* Basic styling */
+    body {
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 1rem;
+      margin: 0;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .column {
+      background-color: #2a2a2a;
+      padding: 1rem;
+      border-radius: 4px;
+      flex: 1;
+      min-width: 300px;
+    }
+    .column h2 {
+      margin-bottom: 0.75rem;
+      text-decoration: underline;
+    }
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin-bottom: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    th {
+      background-color: #333;
+    }
+
+    /* TEAM-SPECIFIC BACKGROUNDS */
+    /* West 8 */
+    .usc       { background-color: #990000; color: #fff; }
+    .oregon    { background-color: #154733; color: #fff; }
+    .kansas-st { background-color: #512888; color: #fff; }
+    .tcu       { background-color: #4d1979; color: #fff; }
+    .colorado  { background-color: #CEB888; color: #000; }
+    .ucla      { background-color: #2774AE; color: #fff; }
+    .alabama   { background-color: #9E1B32; color: #fff; }
+    .lsu       { background-color: #461D7C; color: #fff; }
+
+    /* East 8 */
+    .michigan    { background-color: #00274C; color: #fff; }
+    .notre-dame  { background-color: #0C2340; color: #fff; }
+    .ohio-state  { background-color: #BB0000; color: #fff; }
+    .michigan-st { background-color: #18453B; color: #fff; }
+    .usf         { background-color: #006747; color: #fff; }
+    .clemson     { background-color: #F56600; color: #000; }
+    .unc         { background-color: #7BAFD4; color: #000; }
+    .maryland    { background-color: #CE1126; color: #fff; }
+  </style>
+</head>
+<body>
+
+  <h1>S39 [OCFA] Old Collegiate Football Association Standings &amp; Playoff Picture</h1>
+
+  <div class="container">
+    <!-- Left Column: Standings -->
+    <div class="column">
+      <h2>S39 [OCFA] Standings</h2>
+
+      <!-- WEST 8 Table -->
+      <p style="text-align:center; color:#ccc; margin:0.5rem 0;">West Division (8 Teams)</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>W-L</th>
+              <th>Conf</th>
+              <th>PPG</th>
+              <th>OPPG</th>
+              <th>DPD</th>
+              <th>SOS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="usc">
+              <td>1</td>
+              <td>USC</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="oregon">
+              <td>2</td>
+              <td>Oregon</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="kansas-st">
+              <td>3</td>
+              <td>Kansas St</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="tcu">
+              <td>4</td>
+              <td>TCU</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="colorado">
+              <td>5</td>
+              <td>Colorado</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="ucla">
+              <td>6</td>
+              <td>UCLA</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="alabama">
+              <td>7</td>
+              <td>Alabama</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="lsu">
+              <td>8</td>
+              <td>LSU</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- EAST 8 Table -->
+      <p style="text-align:center; color:#ccc; margin:0.5rem 0;">East Division (8 Teams)</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>W-L</th>
+              <th>Conf</th>
+              <th>PPG</th>
+              <th>OPPG</th>
+              <th>DPD</th>
+              <th>SOS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="michigan">
+              <td>1</td>
+              <td>Michigan</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="notre-dame">
+              <td>2</td>
+              <td>Notre Dame</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="ohio-state">
+              <td>3</td>
+              <td>Ohio State</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="michigan-st">
+              <td>4</td>
+              <td>Michigan St</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="usf">
+              <td>5</td>
+              <td>USF</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="clemson">
+              <td>6</td>
+              <td>Clemson</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="unc">
+              <td>7</td>
+              <td>UNC</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+            <tr class="maryland">
+              <td>8</td>
+              <td>Maryland</td>
+              <td>0-0</td>
+              <td>0-0</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Middle Column: Tiebreakers (optional) -->
+    <div class="column">
+      <h2>TIEBREAKERS</h2>
+      <ul style="line-height:1.6;">
+        <li>1) Head-to-Head Record</li>
+        <li>2) Division Record</li>
+        <li>3) Common Opponents</li>
+        <li>4) Points For / Points Against</li>
+        <li>5) Coin Toss (if all else fails)</li>
+      </ul>
+    </div>
+
+    <!-- Right Column: Playoff Picture -->
+    <div class="column">
+      <h2>S39 [OCFA] Playoff Picture</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Seed</th>
+              <th>Team</th>
+              <th>Record</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 16 Teams with color classes -->
+            <tr class="usc">
+              <td>1</td>
+              <td>USC</td>
+              <td>--</td>
+            </tr>
+            <tr class="michigan">
+              <td>2</td>
+              <td>Michigan</td>
+              <td>--</td>
+            </tr>
+            <tr class="oregon">
+              <td>3</td>
+              <td>Oregon</td>
+              <td>--</td>
+            </tr>
+            <tr class="ohio-state">
+              <td>4</td>
+              <td>Ohio State</td>
+              <td>--</td>
+            </tr>
+            <tr class="kansas-st">
+              <td>5</td>
+              <td>Kansas St</td>
+              <td>--</td>
+            </tr>
+            <tr class="notre-dame">
+              <td>6</td>
+              <td>Notre Dame</td>
+              <td>--</td>
+            </tr>
+            <tr class="tcu">
+              <td>7</td>
+              <td>TCU</td>
+              <td>--</td>
+            </tr>
+            <tr class="colorado">
+              <td>8</td>
+              <td>Colorado</td>
+              <td>--</td>
+            </tr>
+            <tr class="ucla">
+              <td>9</td>
+              <td>UCLA</td>
+              <td>--</td>
+            </tr>
+            <tr class="michigan-st">
+              <td>10</td>
+              <td>Michigan St</td>
+              <td>--</td>
+            </tr>
+            <tr class="alabama">
+              <td>11</td>
+              <td>Alabama</td>
+              <td>--</td>
+            </tr>
+            <tr class="usf">
+              <td>12</td>
+              <td>USF</td>
+              <td>--</td>
+            </tr>
+            <tr class="lsu">
+              <td>13</td>
+              <td>LSU</td>
+              <td>--</td>
+            </tr>
+            <tr class="clemson">
+              <td>14</td>
+              <td>Clemson</td>
+              <td>--</td>
+            </tr>
+            <tr class="unc">
+              <td>15</td>
+              <td>UNC</td>
+              <td>--</td>
+            </tr>
+            <tr class="maryland">
+              <td>16</td>
+              <td>Maryland</td>
+              <td>--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 0.85rem; color: #ccc; text-align:center;">
+        Seeds 1-3 in both conferences clinch playoff spots
+      </p>
+    </div>
+  </div>
+</body>
+</html>

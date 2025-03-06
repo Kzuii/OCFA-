@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OCFA - Start your digital student athlete career</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Inline styles (you can also put these in styles.css) */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: #2a2a2a;
+    }
+    .nav-brand img {
+      height: 60px;
+      width: auto;
+      display: block;
+    }
+    .nav-links a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hamburger {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 4px;
+      background-color: #fff;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #e0f0fa;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero-subtext {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-buttons .btn {
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background-color: #007ACC;
+      border: none;
+      color: #fff;
+    }
+    .btn-secondary {
+      background-color: #ccc;
+      border: none;
+      color: #333;
+    }
+    .btn-outline {
+      background: none;
+      border: 2px solid #007ACC;
+      color: #007ACC;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+    }
+    .score-news-grid, .highlights-stats-grid, .extras-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      margin: 0.5rem;
+      flex: 1 1 300px;
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    .card p.card-subtext {
+      color: #777;
+    }
+    .score-list, .headline-list, .stat-leader-list, .top-list, .media-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0;
+    }
+    .media-list li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer {
+      background-color: #2a2a2a;
+      color: #fff;
+      padding: 1rem;
+    }
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+      margin: 0.5rem;
+    }
+    .footer-column h3 {
+      margin-bottom: 0.5rem;
+    }
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-column ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation / Header -->
+  <header class="header">
+    <nav class="navbar">
+      <!-- Logo at top left -->
+      <div class="nav-brand">
+        <img src="images/OCFALogo.png" alt="OCFA Logo" />
+      </div>
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="#">League</a>
+        <a href="#">Resource</a>
+        <a href="#">Documentation</a>
+      </div>
+      <!-- Hamburger for Mobile (if needed) -->
+      <button class="hamburger" id="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero / Intro Section -->
+  <main class="main-content">
+    <section class="hero">
+      <h1>Start your digital student athlete career</h1>
+      <p class="hero-subtext">
+        Showcase your Ro-Football skills while gaining valuable resources tailored to your career path.
+      </p>
+      <div class="hero-buttons">
+        <!-- Join now: Sends to Roblox group in a new tab -->
+        <button class="btn btn-primary"
+          onclick="window.open('https://www.roblox.com/communities/1211265/OCFA-Old-Collegiate-Football-Association#!/about', '_blank')">
+          Join now
+        </button>
+        <!-- More information: Navigates to moreinfo.html -->
+        <button class="btn btn-secondary" onclick="location.href='moreinfo.html'">
+          More information
+        </button>
+      </div>
+    </section>
+
+    <!-- Score & News Section -->
+    <section class="score-news-grid">
+      <!-- Recent Scores -->
+      <div class="card">
+        <h2>Recent Scores</h2>
+        <p class="card-subtext">Up to date reported scores around the nation</p>
+        <ul class="score-list">
+          <li>1 Tenn State (11-1) &mdash; 23</li>
+          <li>1 Tenn State (11-1) &mdash; 23</li>
+          <li>2 Tenn State (11-1) &mdash; 23</li>
+          <li>3 Tenn State (11-1) &mdash; 23</li>
+        </ul>
+      </div>
+
+      <!-- S25 2025 Schedule -->
+      <div class="card">
+        <h2>S25 2025 Schedule</h2>
+        <p class="card-subtext">
+          View the schedule for all traditional weekly in-week scheduling.
+        </p>
+        <button class="btn btn-outline" onclick="location.href='anotherpage.html'">
+          View schedule
+        </button>
+      </div>
+
+      <!-- Latest Headlines -->
+      <div class="card">
+        <h2>Latest Headlines</h2>
+        <ul class="headline-list">
+          <li>Toronto's #9 Offense Too Much for Ole Miss in SEC East Battle</li>
+          <li>Tennessee Throws for 450 Yards, 5 TDs in A&M’s Victory Over BYU</li>
+          <li>UConn Seeks Playoff Hopes with 45-38 Shootout Win</li>
+          <li>SEC West Chaos: Rushmore, Ole Miss, and Texas A7 All Tied</li>
+          <li>1 Tenn State: The Game Lives Up to the Hype in Instant Classic</li>
+        </ul>
+      </div>
+
+      <!-- Top 12 -->
+      <div class="card">
+        <div class="top-header">
+          <h2>Top 12</h2>
+          <button class="btn btn-outline small" onclick="location.href='top12.html'">
+            View all
+          </button>
+        </div>
+        <ul class="top-list">
+          <li>1 Washington (11-1)</li>
+          <li>2 Washington (11-1)</li>
+          <li>3 Washington (11-1)</li>
+          <li>4 Washington (11-1)</li>
+          <li>5 Washington (11-1)</li>
+          <li>6 Washington (11-1)</li>
+          <li>7 Washington (11-1)</li>
+          <li>8 Washington (11-1)</li>
+          <li>9 Washington (11-1)</li>
+          <li>10 Washington (11-1)</li>
+          <li>11 Washington (11-1)</li>
+          <li>12 Washington (11-1)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Highlights & Stat Leaders Section -->
+    <section class="highlights-stats-grid">
+      <!-- Highlights -->
+      <div class="card">
+        <h2>Highlights</h2>
+        <ul class="highlights-list">
+          <li><div class="video-placeholder"></div> #1 Texas vs #2 Tenn State Recap</li>
+          <li><div class="video-placeholder"></div> Washington’s Trick Play Shocks USC</li>
+          <li><div class="video-placeholder"></div> Upset Alert: Auburn Stuns Alabama</li>
+        </ul>
+      </div>
+
+      <!-- Stat Leaders -->
+      <div class="card">
+        <h2>Stat Leaders</h2>
+        <p class="card-subtext">Passing</p>
+        <ul class="stat-leader-list">
+          <li>
+            <div class="avatar-placeholder"></div>
+            <span>robloxsusername</span>
+            <span class="stat">243.9 PTS</span>
+          </li>
+          <li>
+            <div class="avatar-placeholder"></div>
+            <span>longerrobloxsusername</span>
+            <span class="stat">243.9 PTS</span>
+          </li>
+          <li>
+            <div class="avatar-placeholder"></div>
+            <span>robloxsusername</span>
+            <span class="stat">243.9 PTS</span>
+          </li>
+          <li>
+            <div class="avatar-placeholder"></div>
+            <span>longerrobloxsusername</span>
+            <span class="stat">243.9 PTS</span>
+          </li>
+        </ul>
+        <button class="btn btn-outline" onclick="location.href='allstats.html'">
+          View all statistics
+        </button>
+      </div>
+    </section>
+
+    <!-- Extra Black Cards (Playoffs, Play Now, Media, etc.) -->
+    <section class="extras-grid">
+      <!-- Playoffs -->
+      <div class="card black-card">
+        <h2>Playoffs</h2>
+        <button class="btn btn-light">View</button>
+      </div>
+      <!-- Play Now -->
+      <div class="card black-card">
+        <h2>Play now</h2>
+        <p>Ready to jump into the action?</p>
+        <button class="btn btn-light" onclick="window.open('https://www.roblox.com/games/4104010620/OCFA-Hub', '_blank')">
+          Play
+        </button>
+      </div>
+      <!-- Media Related Sites -->
+      <div class="card black-card">
+        <h2>Media Related Sites</h2>
+        <ul class="media-list">
+          <li>
+            <a href="https://www.youtube.com/@OCFARoblox" target="_blank">
+              YouTube
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/OCFA" target="_blank">
+              Discord
+            </a>
+          </li>
+          <li>
+            <a href="https://www.roblox.com/games/13232422591/OCFA-Bring-it" target="_blank">
+              Bring it
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>OCFA</h3>
+        <p>Helping you find valuable resources to support your ro-football journey.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Schedule & Rankings</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Stats</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Media</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@OCFARoblox" target="_blank">YouTube</a></li>
+          <li><a href="https://discord.gg/OCFA" target="_blank">Discord</a></li>
+          <li><a href="https://www.roblox.com/games/13232422591/OCFA-Bring-it" target="_blank">Bring it</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Official Collegiate Football Association. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
